@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharjan Coffee shop- We sell the best Coffee here :)</title>
+    <link rel="stylesheet" href="2.css">
+    <script src="https://kit.fontawesome.com/f9d255e2b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="conatiner">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+      <li><a href="http://127.0.0.1:5500/New%20folder/coffee/1.html" class="hm">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/New%20folder/coffee/abt.html" class="hm">About Us</a></li>
+      <li><a href="http://127.0.0.1:5500/New%20folder/coffee/3.html" class="hm">Services</a></li>
+      <li><a href="http://127.0.0.1:5500/New%20folder/coffee/conta.html" class="hm">contact</a></li>
+        </ul>
+      </nav>
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+        <img src="images/2.jpg">
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">About Us</h1>
+      <p>Hi it's Maharjan's Coffee Shop the best coffee from ilam, located at the heart of kathmandu.</p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('openhours')">Open-hours</p>
+        <p class="tab-links" onclick="opentab('experience')">Location</p> 
+      </div>
+      <div class="tab-contents active-tab" id="openhours">
+        <ul>
+          <li><span>Open-Hours</span><br>Mondays - Saturdays: 9:00 am to 5:30 pm,
+             or 10:00 am to 8:00 pm/10:00 pm.
+            Sundays: 10:00 am to 4:00 pm, or 11:00 am to 5:00 pm, or 12 noon to 6:00 pm.</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>Our Location</span><br>We are located at chakrapath Oppostieside w of Bhatbhateni.</li>
+          <img src="images/11.PNG">
+
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+     
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  </body>
+  </html>
